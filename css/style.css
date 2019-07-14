@@ -52,8 +52,9 @@ html*{
     border:2px solid black;
 }
 
-.game__cardBox--computer > img{
+.game__cardBox--oneCard > img{
     width:100%;
+    height:100%;
 }
 
 .game__cardBox--user{
