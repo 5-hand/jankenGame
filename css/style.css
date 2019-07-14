@@ -1,0 +1,72 @@
+html{
+    font-size:62.5%;
+}
+
+html*{
+    box-sizing:border-box;
+}
+
+.game{
+    width:800px;
+    margin:0 auto;
+    text-align:center;
+}
+
+.game__field{
+    display:flex;
+    justify-content: space-between;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.game__result{
+    padding:0 20px;
+    display: flex;
+    align-items:center;
+    text-align:left;
+    margin:50px auto 0;
+    width:500px;
+    min-height: 100px;
+    border:3px solid black;
+    font-size:3.0rem;
+}
+
+.game__result .unit{
+    font-size:4.0rem;
+}
+
+.game__title{
+    font-size:3.0rem;
+    margin-top:20px;
+}
+
+.game__text{
+    margin-top:50px;
+    font-size:2.0rem;
+}
+
+.game__cardBox--oneCard{
+    margin-top:20px;
+    width:190px;
+    height:265px;
+    border:2px solid black;
+}
+
+.game__cardBox--computer > img{
+    width:100%;
+}
+
+.game__cardBox--user{
+    margin-top:50px;
+}
+
+.game__cardBoxList{
+    display:flex;
+    justify-content:space-around;
+}
+
+.game__cardBoxList > li > img{
+    width:190px;
+    height:265px;
+    border:2px solid black;
+}
