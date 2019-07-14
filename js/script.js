@@ -1,10 +1,12 @@
 $(function(){
-    var srcs = ['img/pa.jpg','img/choki.jpg','img/guu.jpg'];
-    var userCard;
-    var computerCard;
+    var srcs = ['img/pa.jpg','img/choki.jpg','img/guu.jpg'];//imgのsrcを配列に格納
+    var userCard;//ユーザーが選択したカードの番号を格納
+    var computerCard;//コンピューターが選択したカードの番号を格納
 
+    //.game__cardBoxListの子要素のimgをクリックした時に発火するイベント
+    //.game__selectedUserに選択した写真のソースを設定するイベント
     $('.game__cardBoxList > li > img').click(function(){
-       var selected = $('.game__selectedUser').attr("src");
+       var selected = $('.game__selectedUser').attr("src");//.game__selectedUserのソースを変数に格納
        if(selected){return;}
        var src = $(this).attr("src");
        userCard = srcs.indexOf(src);
